@@ -15,7 +15,6 @@ public class SSHer {
     public String getUsername() {
         return username;
     }
-
     public String getPassword() {
         return password;
     }
@@ -24,7 +23,6 @@ public class SSHer {
     public int SSH() {
         int i = 0;
         while(i < password.length()) {
-
             // Lowercase
             if(password.charAt(i) == 'a') {
                 password = password.substring(0, i) + "1" + password.substring(i + 1);
@@ -104,7 +102,6 @@ public class SSHer {
             if (password.charAt(i) == 'z') {
                 password = password.substring(0, i) + "26" + password.substring(i + 1);
             }
-
             // Uppercase
             if (password.charAt(i) == 'A') {
                 password = password.substring(0, i) + "27" + password.substring(i + 1);
@@ -184,7 +181,6 @@ public class SSHer {
             if (password.charAt(i) == 'Z') {
                 password = password.substring(0, i) + "52" + password.substring(i + 1);
             }
-
             // Symbols
             if (password.charAt(i) == '!') {
                 password = password.substring(0, i) + "53" + password.substring(i + 1);
