@@ -1,14 +1,14 @@
-import java.lang.Math;
 public class SSHer {
     // instance variables
     private String username;
     private String password;
-    private int multiplier = (int)(Math.random() * 0) + 10;
+    private int multiplier;
 
     // constructor
-    public SSHer(String username, String password) {
+    public SSHer(String username, String password, int multiplier) {
         this.username = username;
         this.password = password;
+        this.multiplier = multiplier;
     }
 
     // getters
@@ -245,6 +245,6 @@ public class SSHer {
             }
             i++;
         }
-        return (Integer.parseInt(password) * multiplier);
+        return (Integer.parseInt(password)) * multiplier;
     }
 }
